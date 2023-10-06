@@ -29,8 +29,7 @@ const playRound = () => {
     playerGameScore.textContent = `Player score: ${playerScore}`;
     computerGameScore.textContent = `Computer score: ${computerScore}`;
     resultMessage.textContent = resultMessageString;
-  }
-  if (
+  } else if (
     (playerChoice === "paper" && computerChoice === "rock") ||
     (playerChoice === "rock" && computerChoice === "scissors") ||
     (playerChoice === "scissors" && computerChoice === "paper")
